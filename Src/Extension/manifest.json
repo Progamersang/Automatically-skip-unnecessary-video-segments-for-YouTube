@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Automatically Skip Unnecessary Video Segments for YouTube",
+    "version": "1.0",
+    "description": "Skip unnecessary segments in YouTube videos and send the segments to be skipped to the server.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
