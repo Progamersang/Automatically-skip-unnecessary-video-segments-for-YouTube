@@ -1,4 +1,3 @@
-# Automatically-skip-unnecessary-video-segments-for-YouTube
 # Automatically Skip Unnecessary Video Segments for YouTube
 
 ## Overview
